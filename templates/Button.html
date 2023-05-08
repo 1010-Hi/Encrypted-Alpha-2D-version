@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type ="text/css" href="{{url_for('static', filename ='style3.css')}}">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+       <link rel="shortcut icon" href="Lock.ico" type="image/x-icon">
+    <title>!!!</title>
+</head>
+<body>
+  <script src="{{ url_for('static', filename='anticheat.js') }}"> </script>
+    <h1>Ok, so I see you want some thing, harder let me see what I can arange.</h1>
+    <button onclick="reset();">NEXT</button>
+    <button onclick="reset();">NEXT</button>
+    <button onclick="reset();">NEXT</button>
+    <button onclick="reset();">NEXT</button>
+    <button onclick="reset();">NEXT</button>
+    <button onclick="reset();">NEXT</button>
+    <button onclick="mini();">NEXT</button>
+    <button onclick="reset();">NEXT</button>
+    <button onclick="reset();">NEXT</button>
+    <button onclick="reset();">NEXT</button>
+    <button onclick="reset();">NEXT</button>
+    <button onclick="reset();">NEXT</button>
+    <h1>Hit the wrong NEXT and you'll have to restart.</h1>
+
+
+    <script>
+      function reset(){
+    location.href = "/Encrypted"
+  }
+
+  function mini(){
+    location.href = "/MiniGame2"
+  }
+    </script>
+</body>
+</html>

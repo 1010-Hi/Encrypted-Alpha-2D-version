@@ -1,0 +1,46 @@
+<!Doctype html> 
+<html>
+  <head>
+    <title>Home Page</title> 
+    
+    <style>
+      body h6{
+        display:none;
+      }
+    </style>
+    
+  </head>
+ <body>
+   <h1>That wasn't intended.</h1>
+   <br>
+   <ins><b>404</b></ins>
+ <p><b>You'll be redirected back to home shortly.</b></p>
+
+<script>
+   var counter = 0
+    var stop = window.setInterval(counting, 1000)
+    console.log(stop)
+    var newElement = document.createElement("h6")
+    var insertnum = document.createTextNode(counter)
+    newElement.appendChild(insertnum)
+
+
+    function counting() {
+        counter += 1
+
+        console.log(counter)
+
+        document.body.appendChild(newElement)
+
+
+        insertnum.replaceData(0, 2, counter)
+
+        if (counter > 4) {
+            window.clearInterval(stop)
+            location.href = "/"
+        }
+    }
+</script>
+   
+ </body>
+</html>

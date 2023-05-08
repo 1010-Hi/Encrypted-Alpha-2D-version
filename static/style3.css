@@ -1,0 +1,17 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: silver;
+    text-align: center;
+    font-family: 'Verdana', sans-serif;
+}
+
+canvas {
+    background-color: black;
+    text-align: center;
+}
+
+button{
+    color:grey;
+    font-family: Impact, 'Haettenschweiler', 'Arial Narrow Bold', sans-serif;
+}

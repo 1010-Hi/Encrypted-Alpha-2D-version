@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" type ="text/css" href="{{url_for('static', filename ='style2.css')}}">
+  <link rel="shortcut icon" href="Lock.ico" type="image/x-icon">
+  <title>Encrypted</title>
+</head>
+
+<body>
+<script src="{{ url_for('static', filename='anticheat.js') }}"> </script>
+  <!--<div class="hide">
+    <audio controls autoplay loop>
+            <source src="What.mp3" type="audio/mp3">
+            <source src="What.wav" type="audio/wav">
+       </audio>
+</div>-->
+
+  <input id="Encrypted" type="text">
+  <input id="Encrypted2" type="text">
+  <input id="Encrypted3" type="text">
+  <input id="Encrypted4" type="text">
+  <input id="Encrypted5" type="text">
+  <button id="enter">ENTER</button>
+  <script>
+    var code = 0
+    var code2 = 0
+    var code3 = 1
+    var code4 = 2
+    var code5 = 3
+
+    var Encrypted = document.querySelector("#Encrypted")
+    var Encrypted2 = document.querySelector("#Encrypted2")
+    var Encrypted3 = document.querySelector("#Encrypted3")
+    var Encrypted4 = document.querySelector("#Encrypted4")
+    var Encrypted5 = document.querySelector("#Encrypted5")
+    var enter = document.querySelector("#enter")
+
+    enter.onclick = check
+
+    function check() {
+      if (code == Encrypted.value)
+        if (code2 == Encrypted2.value)
+          if (code3 == Encrypted3.value)
+            if (code4 == Encrypted4.value)
+              if (code5 == Encrypted5.value) {
+                location.href = "/Invis"
+              }
+    }
+  </script>
+
+</body>
+
+</html>

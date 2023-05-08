@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+       <link rel="shortcut icon" href="Lock.ico" type="image/x-icon">
+       <link rel="stylesheet" type ="text/css" href="{{url_for('static', filename ='style.css')}}">
+  </head>
+  <body>
+ <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+<h1>Encrypted</h1>
+<script src="anitcheat.js"> </script>
+<script>
+
+     var counter = 0
+    var stop = window.setInterval(counting, 1000)
+    console.log(stop)
+    var newElement = document.createElement("p")
+    var insertnum = document.createTextNode(counter)
+    newElement.appendChild(insertnum)
+
+
+    function counting() {
+        counter += 1
+
+        console.log(counter)
+
+        document.body.appendChild(newElement)
+
+
+        insertnum.replaceData(0, 2, counter)
+
+        if (counter > 2) {
+            window.clearInterval(stop)
+            location.href = "/Encrypted"
+        }
+    }
+</script>
+  </body>
+</html>

@@ -1,0 +1,16 @@
+body{
+    text-align: center;
+    background-color: black;
+  }
+  
+  body h1{
+    font-size: 900%;
+    color: white; 
+  }
+  body p{
+    font-size:1%;
+  }
+  
+  .hide audio{
+      display: none;
+  }

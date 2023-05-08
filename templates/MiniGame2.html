@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="shortcut icon" href="Lock.ico" type="image/x-icon">
+  <title>-...-</title>
+  <link rel="stylesheet" type ="text/css" href="{{url_for('static', filename ='style4.css')}}">
+
+  <script src="{{ url_for('static', filename='BadGuy.js') }}"> </script>
+  <script src="{{ url_for('static', filename='Player.js') }}"> </script>
+  <script src="{{ url_for('static', filename='game1.js') }}"> </script>
+</head>
+
+<body onload="startGame()">
+  <h1>hmm...I know</h1>
+  <canvas width="600px" height="600px" id="gc"></canvas>
+  <h1>Find the trigger!</h1>
+</body>
+<script src="{{ url_for('static', filename='anticheat.js') }}"> </script>
+
+</html>

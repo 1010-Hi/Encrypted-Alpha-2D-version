@@ -1,0 +1,49 @@
+<html>
+
+<body>
+
+  <head>
+    <title>What?</title>
+    <link rel="stylesheet" type ="text/css" href="{{url_for('static', filename ='style5.css')}}">
+
+  </head>
+      <h1>How many tries did that take you?? Whatever. I won't let you win no matter the cost!</h1>
+      <h1> Don't hit the wrong button! :) </h1>
+
+      <button onclick="crash();">It might be me.</button>
+      <button onclick="spam();">This could kill you.</button>
+      <button onclick="anwser();">You'll be fine.</button>
+      <button onclick="lost();">You'll win 100%.</button>
+
+      <script>
+        function crash() {
+
+          alert("I said you won't win no matter the cost. You might want to leave now....");
+
+          var total = "0"
+          for (var i = 0; i </*99999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999*/ 4; i++) {
+            total = total + i.toString()
+            history.pushState(0, 0, total);
+          }
+        }
+
+        function spam() {
+          alert("You loss. Now leave.");
+          spam();
+        }
+
+        function anwser() {
+          alert("You will never win!");
+          location.href = "/MiniGame"
+        }
+
+        function lost(){
+        alert("Damn it!!! How??! No. You can't win! STOP!");
+        location.href = "/Win"
+      }
+
+      </script>
+      <script src="{{ url_for('static', filename='anticheat.js') }}"> </script>
+</body>
+
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="shortcut icon" href="Lock.ico" type="image/x-icon">
+  <title>My Game</title>
+  <link rel="stylesheet" type ="text/css" href="{{url_for('static', filename ='style3.css')}}">
+  <script src="{{ url_for('static', filename='game.js') }}"> </script>
+</head>
+<h1>Ha you'll never win this one! The win zone is an immaculate 2px by 1px so have fun. Ha! Ha! Ha!</h1>
+
+<body onload="startGame()">
+
+  <canvas width="1261px" height="693px" id="gc"></canvas>
+</body>
+<script src="{{ url_for('static', filename='anticheat.js') }}"> </script>
+<script>
+  alert("Use arrow keys. I'm too lazy to prgram in WASD even if it's really easy to do.");
+</script>
+</html>
